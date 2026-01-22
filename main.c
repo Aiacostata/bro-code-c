@@ -1,33 +1,33 @@
 #include <stdio.h>
 
 int main() {
+  // Operadores Aritméticos = + - * / % ++ --
 
-  int idade = 21;
-  // float preco = 299.99;
-  char nome[7] = "Gustavo";
-  double pi = 3.14159265358979323846;
+  int x = 20;
+  int y = 6;
+  int z = 0;
+  int a = 0;
 
-  int num1 = 1;
-  int num2 = 10;
-  // int num2 = -10;
-  int num3 = 100;
+  int b = 0;
 
-  float price1 = 0.99;
-  float price2 = 2.99;
-  float price3 = 12.99;
+  // z = x + y;
+  // z = x - y;
+  // z = y - x;
+  // z = x * y;
+  // w = x / y;
 
-  printf("Bem vindo, sujeito %.7s. Vamos fazer alguma ciência?\n", nome);
-  // printf("%d\n", idade);
-  // printf("%.2f\n", preco);
-  // printf("%.20lf\n", pi);
+  // a = x / y;
+  // z = x % y;
+  //  b++;
+  //++b;
+  //  b--;
+  --b;
 
-  printf("%03d\n", num1);
-  printf("%03d\n", num2);
-  printf("%03d\n", num3);
+  z += x;
 
-  printf("%+7.2f\n", price1);
-  printf("%+7.2f\n", price2);
-  printf("%+7.2f\n", price3);
+  printf("%d\n", z);
+  // printf("%d\n", a);
 
+  printf("%d\n", b);
   return 0;
 }
