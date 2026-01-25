@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 // Máquina de vendas ingênua...
 // O objetivo é criar um programa que se comunica com o usuário para auxiliar a
 // realizar uma compra, sem persistência de dados, sem segurança, e confiando
@@ -17,6 +18,7 @@ int main() {
   printf("Insira um item ao seu carrinho. \n");
   fgets(item, sizeof(item), stdin);
   // Usar scanf("%s", &item); até funciona, mas sempre alega que há algo errado.
+  item[strlen(item) - 1] = '\0';
   printf("Insira o preço do item. ");
   scanf("%f", &preco);
   printf("Agora insira a quantidade de itens que deseja. ");
@@ -24,6 +26,7 @@ int main() {
 
   total = preco * quantidade;
 
+  printf("Você está comprando %d %s/s\n", quantidade, item);
   printf("Total: %c%.2f\n", currency, total);
 
   printf("insira o valor do pagamento.");
